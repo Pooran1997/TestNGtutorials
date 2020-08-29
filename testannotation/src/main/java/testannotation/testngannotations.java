@@ -30,10 +30,15 @@ public void beforetest() {
 System.out.println("this is the before test data");
 }
 
-@Test
+/*priority is used to define the sequence of test cases */
+@Test(priority = 1)
 public void testdata() {
-	System.out.println("this is the test data");
+	System.out.println("this is the test data with priority 0");
 	
 }
 
+@Test(priority = 2)
+public void testdata2() {
+	System.out.println("this is the test data");
+}
 }
