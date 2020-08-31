@@ -1,33 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-08-27T12:44:41 IST" name="Default suite" finished-at="2020-08-27T12:44:41 IST" duration-ms="65">
+  <suite started-at="2020-08-31T15:51:23 IST" name="Default suite" finished-at="2020-08-31T15:51:23 IST" duration-ms="122">
     <groups>
     </groups>
-    <test started-at="2020-08-27T12:44:41 IST" name="Default test" finished-at="2020-08-27T12:44:41 IST" duration-ms="65">
-      <class name="testannotation.testngannotations">
-        <test-method is-config="true" signature="beforesuite()[pri:0, instance:testannotation.testngannotations@2aa5fe93]" started-at="2020-08-27T12:44:41 IST" name="beforesuite" finished-at="2020-08-27T12:44:41 IST" duration-ms="136" status="PASS">
+    <test started-at="2020-08-31T15:51:23 IST" name="Default test" finished-at="2020-08-31T15:51:23 IST" duration-ms="122">
+      <class name="testannotation.TestNG_Features">
+        <test-method signature="Loginpage()[pri:0, instance:testannotation.TestNG_Features@7920ba90]" started-at="2020-08-31T15:51:23 IST" name="Loginpage" finished-at="2020-08-31T15:51:23 IST" duration-ms="17" status="FAIL">
+          <exception class="java.lang.ArithmeticException">
+            <message>
+              <![CDATA[/ by zero]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArithmeticException: / by zero
+at testannotation.TestNG_Features.Loginpage(TestNG_Features.java:11)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArithmeticException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforesuite -->
-        <test-method is-config="true" signature="beforetest()[pri:0, instance:testannotation.testngannotations@2aa5fe93]" started-at="2020-08-27T12:44:41 IST" name="beforetest" finished-at="2020-08-27T12:44:41 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- Loginpage -->
+        <test-method signature="homepage()[pri:0, instance:testannotation.TestNG_Features@7920ba90]" started-at="2020-08-31T15:51:23 IST" name="homepage" finished-at="2020-08-31T15:51:23 IST" depends-on-methods="testannotation.TestNG_Features.Loginpage" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestNG_Features.homepage()[pri:0, instance:testannotation.TestNG_Features@7920ba90] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestNG_Features.homepage()[pri:0, instance:testannotation.TestNG_Features@7920ba90] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforetest -->
-        <test-method is-config="true" signature="beforedata()[pri:0, instance:testannotation.testngannotations@2aa5fe93]" started-at="2020-08-27T12:44:41 IST" name="beforedata" finished-at="2020-08-27T12:44:41 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforedata -->
-        <test-method is-config="true" signature="beforemethod()[pri:0, instance:testannotation.testngannotations@2aa5fe93]" started-at="2020-08-27T12:44:41 IST" name="beforemethod" finished-at="2020-08-27T12:44:41 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforemethod -->
-        <test-method signature="testdata()[pri:0, instance:testannotation.testngannotations@2aa5fe93]" started-at="2020-08-27T12:44:41 IST" name="testdata" finished-at="2020-08-27T12:44:41 IST" duration-ms="7" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testdata -->
-      </class> <!-- testannotation.testngannotations -->
+        </test-method> <!-- homepage -->
+      </class> <!-- testannotation.TestNG_Features -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
